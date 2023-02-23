@@ -1,13 +1,21 @@
+:root {
+  --primary-color: #ebebe3;
+  --secondary-color: #c19898;
+  --tertiary-color: #4a4a48;
+  --accent-color: #2b2b28;
+}
+
 .Weather {
-  border: 1px solid #f8cbc5;
+  border: 1px solid var(--tertiary-color);
   border-radius: 12px;
-  padding: 25px;
-  background-color: #fcf5e5;
+  padding: 50px;
+  background-color: var(--primary-color);
   text-align: center;
 }
 
 .Weather .btn {
-  background-color: #f8cbc5;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
 }
 
 .Weather h1 {
@@ -21,4 +29,31 @@
 
 .Weather p {
   opacity: 0.8;
+}
+
+.backgroundWeather {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url("./moon.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: 1px solid var(--secondary-color);
+  padding: 25px;
+  border-radius: 12px;
+  margin: 30px auto;
+}
+
+.displayWeather {
+  border-radius: 12px;
+  margin: 30px auto;
+  color: var(--primary-color);
+}
+
+.displayWeather a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+.displayWeather a:hover {
+  color: var(--secondary-color);
 }

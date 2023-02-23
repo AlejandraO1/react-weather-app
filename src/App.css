@@ -1,3 +1,7 @@
+body {
+  background-color: #2b2b28;
+}
+
 .App {
   max-width: 600px;
   margin: 30px auto;
@@ -6,4 +10,15 @@
 .App footer {
   font-size: 12px;
   margin: 20px 0;
+  color: #c19898;
+}
+
+.App footer a {
+  color: #ebebe3;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+.App footer a:hover {
+  color: #c19898;
 }

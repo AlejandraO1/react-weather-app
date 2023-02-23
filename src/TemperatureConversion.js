@@ -16,10 +16,13 @@ export default function TemperatureConversion(props) {
     return (
       <div className="TemperatureConversion">
         <strong class="temperature">{Math.round(props.fahrenheit)}</strong>
-        °F |{" "}
-        <a href="/" onClick={showCelsius}>
-          °C
-        </a>
+        <sup>
+          {" "}
+          °F |{" "}
+          <a href="/" onClick={showCelsius}>
+            °C
+          </a>
+        </sup>
       </div>
     );
   } else {
@@ -27,10 +30,13 @@ export default function TemperatureConversion(props) {
     return (
       <div className="TemperatureConversion">
         <strong class="temperature">{Math.round(celsius)}</strong>
-        <a href="/" onClick={showFahrenheit}>
-          °F{" "}
-        </a>
-        | °C
+        <sup>
+          {" "}
+          <a href="/" onClick={showFahrenheit}>
+            °F{" "}
+          </a>
+          | °C
+        </sup>
       </div>
     );
   }

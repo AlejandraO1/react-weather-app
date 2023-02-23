@@ -20,15 +20,22 @@
 
 .Weather h1 {
   margin: 15px 0 0 0;
+  font-size: 35px;
 }
 
 .Weather ul {
   list-style: none;
   padding: 0px;
+  font-size: 20px;
 }
 
 .Weather p {
   opacity: 0.8;
+  font-size: 18px;
+}
+
+.Weather strong {
+  font-size: 30px;
 }
 
 .backgroundWeather {
@@ -37,23 +44,21 @@
   background-size: 100%;
   background-repeat: no-repeat;
   border: 1px solid var(--secondary-color);
-  padding: 25px;
+  padding: 75px;
   border-radius: 12px;
-  margin: 30px auto;
+  margin: 20px auto;
 }
 
 .displayWeather {
-  border-radius: 12px;
-  margin: 30px auto;
   color: var(--primary-color);
 }
 
 .displayWeather a {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-decoration: none;
   transition: all 200ms ease-in-out;
 }
 
 .displayWeather a:hover {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }

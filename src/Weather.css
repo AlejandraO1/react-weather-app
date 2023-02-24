@@ -62,3 +62,9 @@
 .displayWeather a:hover {
   color: var(--primary-color);
 }
+
+.loading {
+  text-align: center;
+  font-size: 35px;
+  color: #c19898;
+}

@@ -40,7 +40,7 @@
 
 .backgroundWeather {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
-    url("./moon.jpg");
+    url("images/moon.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   border: 1px solid var(--secondary-color);
@@ -50,7 +50,7 @@
 }
 
 .displayWeather {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .displayWeather a {

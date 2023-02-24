@@ -3,10 +3,48 @@ import axios from "axios";
 import WeatherInfo from "./WeatherInfo.js";
 
 import "./Weather.css";
+import "./backgroundImages.css";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
+  const [backgroundWeather, setBackground] = useState("");
+
+  function changeBackground(icon) {
+    if (icon === "clear-sky-day") {
+      setBackground("day-clear");
+    } else if (icon === "clear-sky-night") {
+      setBackground("night-clear");
+    } else if (icon === "few-clouds-day") {
+      setBackground("day-clouds");
+    } else if (icon === "few-clouds-night") {
+      setBackground("night-clouds");
+    } else if (
+      icon === "scattered-clouds-day" ||
+      icon === "broken-clouds-day"
+    ) {
+      setBackground("cloudy-day");
+    } else if (
+      icon === "scattered-clouds-night" ||
+      icon === "broken-clouds-night"
+    ) {
+      setBackground("cloudy-night");
+    } else if (
+      icon === "shower-rain-day" ||
+      icon === "shower-rain-night" ||
+      icon === "rain-day" ||
+      icon === "rain-night"
+    ) {
+      setBackground("rainy");
+    } else if (icon === "thunderstorm-day" || icon === "thunderstorm-night") {
+      setBackground("thunder");
+    } else if (icon === "snow-day" || icon === "snow-night") {
+      setBackground("snow");
+    } else if (icon === "mist-day" || icon === "mist-night") {
+      setBackground("misty");
+    }
+  }
+
   function handleResponse(response) {
     setWeatherData({
       ready: true,
@@ -18,6 +56,7 @@ export default function Weather(props) {
       description: response.data.condition.description,
       icon: response.data.condition.icon,
     });
+    changeBackground(response.data.condition.icon);
   }
 
   function search() {
@@ -54,8 +93,10 @@ export default function Weather(props) {
               <input type="submit" value="Search" className="btn" />
             </div>
           </div>
-        </form>
-        <WeatherInfo data={weatherData} />
+        </form>{" "}
+        <div className={backgroundWeather}>
+          <WeatherInfo data={weatherData} />
+        </div>
       </div>
     );
   } else {

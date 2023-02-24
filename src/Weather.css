@@ -6,7 +6,7 @@
 }
 
 .Weather {
-  border: 1px solid var(--tertiary-color);
+  border: 5px solid var(--secondary-color);
   border-radius: 12px;
   padding: 50px;
   background-color: var(--primary-color);
@@ -43,7 +43,7 @@
     url("images/moon.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
-  border: 1px solid var(--secondary-color);
+  border: 5px solid var(--tertiary-color);
   padding: 75px;
   border-radius: 12px;
   margin: 20px auto;

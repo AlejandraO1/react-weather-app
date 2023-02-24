@@ -1,0 +1,99 @@
+.day-clear {
+  background-image: url("images/sun.jpg");
+  background-repeat: no-repeat;
+  border: 1px solid var(--secondary-color);
+  padding: 75px;
+  border-radius: 12px;
+  margin: 20px auto;
+  background-size: 100%;
+}
+
+.night-clear {
+  background-image: url("images/moon.jpg");
+  background-repeat: no-repeat;
+  border: 1px solid var(--secondary-color);
+  padding: 75px;
+  border-radius: 12px;
+  margin: 20px auto;
+  background-size: 100%;
+}
+
+.day-clouds {
+  background-image: url("images/cloud-sun.jpg");
+  background-repeat: no-repeat;
+  border: 1px solid var(--secondary-color);
+  padding: 75px;
+  border-radius: 12px;
+  margin: 20px auto;
+  background-size: 100%;
+}
+
+.night-clouds {
+  background-color: url("images/cloud-moon.jpg");
+  background-repeat: no-repeat;
+  border: 1px solid var(--secondary-color);
+  padding: 75px;
+  border-radius: 12px;
+  margin: 20px auto;
+  background-size: 100%;
+}
+
+.cloudy-day {
+  background-image: url("images/day-cloud.jpg");
+  background-repeat: no-repeat;
+  border: 1px solid var(--secondary-color);
+  padding: 75px;
+  border-radius: 12px;
+  margin: 20px auto;
+  background-size: 100%;
+}
+
+.cloudy-night {
+  background-image: url("images/night-cloud.jpg");
+  background-repeat: no-repeat;
+  border: 1px solid var(--secondary-color);
+  padding: 75px;
+  border-radius: 12px;
+  margin: 20px auto;
+  background-size: 100%;
+}
+
+.rainy {
+  background-image: url("images/rain.jpg");
+  background-repeat: no-repeat;
+  border: 1px solid var(--secondary-color);
+  padding: 75px;
+  border-radius: 12px;
+  margin: 20px auto;
+  background-size: 100%;
+}
+
+.thunder {
+  background-image: url("images/lightning.jpg");
+  background-repeat: no-repeat;
+  border: 1px solid var(--secondary-color);
+  padding: 75px;
+  border-radius: 12px;
+  margin: 20px auto;
+  background-size: 100%;
+}
+
+.snow {
+  background-image: url("images/snow.jpg");
+  background-repeat: no-repeat;
+  border: 1px solid var(--secondary-color);
+  padding: 75px;
+  border-radius: 12px;
+  margin: 20px auto;
+  background-size: 100%;
+}
+
+.misty {
+  background-image: url("images/mist.jpg");
+  background-repeat: no-repeat;
+  border: 1px solid var(--secondary-color);
+  padding: 75px;
+  border-radius: 12px;
+  margin: 20px auto;
+  background-size: 100%;
+}

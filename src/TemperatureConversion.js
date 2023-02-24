@@ -19,7 +19,7 @@ export default function TemperatureConversion(props) {
         <sup>
           {" "}
           °F |{" "}
-          <a href="/" onClick={showCelsius}>
+          <a href="/" onClick={showCelsius} rel="noreferrer">
             °C
           </a>
         </sup>
@@ -32,7 +32,7 @@ export default function TemperatureConversion(props) {
         <strong class="temperature">{Math.round(celsius)}</strong>
         <sup>
           {" "}
-          <a href="/" onClick={showFahrenheit}>
+          <a href="/" onClick={showFahrenheit} rel="noreferrer">
             °F{" "}
           </a>
           | °C

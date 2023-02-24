@@ -41,9 +41,9 @@
 }
 
 .night-clouds {
-  background-color: linear-gradient(
-      rgba(120, 120, 120, 0.5),
-      rgba(130, 130, 130, 0.4)
+  background-image: linear-gradient(
+      rgba(54, 54, 54, 0.5),
+      rgba(70, 70, 70, 0.4)
     ),
     url("images/cloud-moon.jpg");
   background-repeat: no-repeat;

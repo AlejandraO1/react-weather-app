@@ -12,7 +12,7 @@ export default function WeatherInfo(props) {
       </p>
       <ul>
         <li>
-          <WeatherIcon code={props.data.icon} />
+          <WeatherIcon code={props.data.icon} size={64} />
         </li>
         <li>
           <TemperatureConversion fahrenheit={props.data.temperature} />

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo.js";
 import WeatherForecast from "./WeatherForecast";
+import { ColorRing } from "react-loader-spinner";
 
 import "./Weather.css";
 import "./backgroundImages.css";
@@ -103,6 +104,18 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return <div className="loading">Loading...</div>;
+    return (
+      <div className="loading">
+        <ColorRing
+          visible={true}
+          height="80"
+          width="80"
+          ariaLabel="blocks-loading"
+          wrapperStyle={{}}
+          wrapperClass="blocks-wrapper"
+          colors={["#c19898", "#c19898", "#c19898", "#c19898", "#c19898"]}
+        />
+      </div>
+    );
   }
 }

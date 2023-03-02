@@ -8,7 +8,7 @@
 .Weather {
   border: 5px solid var(--secondary-color);
   border-radius: 12px;
-  padding: 50px;
+  padding: 40px;
   background-color: var(--primary-color);
   text-align: center;
 }
@@ -61,10 +61,4 @@
 
 .displayWeather a:hover {
   color: var(--primary-color);
-}
-
-.loading {
-  text-align: center;
-  font-size: 35px;
-  color: #c19898;
 }

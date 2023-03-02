@@ -8,9 +8,10 @@ body {
 }
 
 .App footer {
-  font-size: 12px;
-  margin: 20px 0;
+  font-size: 14px;
+  margin: 10px 0;
   color: #c19898;
+  text-align: center;
 }
 
 .App footer a {
